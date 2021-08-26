@@ -1,4 +1,4 @@
-
++
 /**
  * Validadores de Formulários - Semantic UI
  */
@@ -50,6 +50,10 @@ require('./modules/multiCd');
 $(document).ready(function(){
     "use strict";    
 });
+
+//--------------------[ Hotsites ]--------------------//
+require('../functions/frontend');
+require('../functions/frontend-edit');
 
 window.imgError = function imgError(event) {
     $(event).attr('data-old-src', $(event).attr('src'));

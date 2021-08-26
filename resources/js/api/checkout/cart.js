@@ -400,7 +400,7 @@ $(document).ready(function () {
     CancelarCalculoFreteClk();
     loadCompraRecorrente();
 
-    if ($("#zipcode") != null && $("#zipcode").val().length > 0) {
+    if ($("#zipcode").length && $("#zipcode") != null && $("#zipcode").val().length > 0) {
         $('#shipping').val($("#zipcode").val());
     }
 });

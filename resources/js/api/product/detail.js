@@ -188,7 +188,7 @@ $(document).ready(function () {
         //calculo de frete
         calcShipping()
 
-        if ($("#zipcode") != null && $("#zipcode").val().length > 0) {
+        if ($("#zipcode").length && $("#zipcode") != null && $("#zipcode").val().length > 0) {
             $('#simular-frete-cep').val($("#zipcode").val());
             if (getUrlVars()["calcShipping"] == 'true') {
                 $("#simular-frete-submit").click();
